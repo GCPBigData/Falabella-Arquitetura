@@ -1,11 +1,7 @@
 # Arquitectura
-Falabella Arquitetura
-Software como Serviço (SaaS), 
-Plataforma como Serviço (PaaS),
-Infraestrutura como Serviço (IaaS).
 
-Arquitectura de nube para datos
-Caso de estudio – El Sistema actual
+# Arquitectura de nube para datos Caso de estudio – El Sistema actual
+
 Una cadena de supermercados, que funciona solamente en Santiago, tiene una infraestructura de tecnología on-
 premises como la que se muestra en la imagen de la siguiente hoja.
 A muy alto nivel está compuesta de:
@@ -52,7 +48,16 @@ Scientist, 2 Data Analysts y 1 Data Engineer puedan iniciar la creación de tabl
 predictivos de ventas e inventario. Indique como será la transferencia de datos desde el Sistema central a la
 plataforma de BI & Analítica.
 
+Software como Serviço (SaaS), 
+Plataforma como Serviço (PaaS),
+Infraestrutura como Serviço (IaaS).
+
 ![](arquitetura.png)
+* Unificación de bases de datos (Oracle / MS SQL Serve / PostgresSQL) para una única base de datos relacional y para ecomerce una base de datos NoSQL no relacional (MongoDB o Cloud Firestore) Cloud Firestore es google y no sería muy fácil de usar.
+* Las aplicaciones .NET y Java que tendrían que modificarse para acceder a un Kafka Cluster en Goocle Cloud que se muestra a continuación, ya no necesitarán CSV, o cargar Batch para realizar la transformación de datos, o cargar la base de datos, porque los datos están unificados en la misma plataforma.
+* Los programas de la oficina central funcionarían a través de Data Strudio y BI Tools ya disponibles en la arquitectura y presentes en Google Cloud, sirviendo al equipo de análisis para ampliarlo.
+eficiencia en control de inventario y ventas.
+* Esta arquitectura basada en Kafka Messaging es compatible con lo descrito en las rutas de mensajes del mensaje 2 y 500 mil millones de eventos. Junto con MongoDB o Cloud Firestore sería perfecto para un comercio electrónico que tiene una gran demanda de transacciones y latencias de ancho de banda.
 
 
 
