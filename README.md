@@ -53,7 +53,7 @@ Plataforma como Serviço (PaaS),
 Infraestrutura como Serviço (IaaS).
 
 ![](arquitetura.png)
-* Unificación de bases de datos (Oracle / MS SQL Serve / PostgresSQL) para una única base de datos relacional y para ecomerce una base de datos NoSQL no relacional (MongoDB o Cloud Firestore) Cloud Firestore es google y no sería muy fácil de usar.
+* Unificación de bases de datos (Oracle / MS SQL Serve / PostgresSQL) para una única base de datos relacional y para ecomerce una base de datos NoSQL no relacional (MongoDB o Cloud Firestore) Cloud Firestore es google y sería muy fácil de usar.
 * Las aplicaciones .NET y Java que tendrían que modificarse para acceder a un Kafka Cluster en Goocle Cloud que se muestra a continuación, ya no necesitarán CSV, o cargar Batch para realizar la transformación de datos, o cargar la base de datos, porque los datos están unificados en la misma plataforma.
 * Los programas de la oficina central funcionarían a través de Data Strudio y BI Tools ya disponibles en la arquitectura y presentes en Google Cloud, sirviendo al equipo de análisis para ampliarlo.
 eficiencia en control de inventario y ventas.
